@@ -1,0 +1,36 @@
+:root {
+  margin: 0px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+body {
+  box-sizing: border-box;
+  min-width: 450px;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  header {
+    box-shadow: 0px 3px 6px 3px rgba(36, 36, 36, 0.5);
+  }
+  .textOnBgImg {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  footer {
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .discription {
+    align-items: center;
+    flex-direction: column;
+  }
+}
