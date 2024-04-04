@@ -33,4 +33,7 @@ body {
     align-items: center;
     flex-direction: column;
   }
+  footer{
+    flex-direction: column;
+  }
 }

@@ -1,15 +1,24 @@
 import { Component } from 'react';
-import './Footer.css'
+import './Footer.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export class Footer extends Component {
-  render() {
+    componentDidMount() {
+        AOS.init({
+            duration: 500,
+            once: true
+        });
+    }
+        render() {
+            
     return (
       <>
-        <footer>
+        <footer data-aos="fade-up">
           <div className="address">
             <p>
-             Warner Bros. Studios в Бербанке: 3400 Warner Blvd, Burbank,
-              CA 91505, United States
+              Warner Bros. Studios в Бербанке: 3400 Warner Blvd, Burbank, CA
+              91505, United States
             </p>
           </div>
           <div className="directorEmail">

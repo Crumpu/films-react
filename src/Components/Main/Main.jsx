@@ -1,13 +1,20 @@
 import { Component } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Main.css';
 import hpCover from '/hp.jpg';
 
 export class Main extends Component {
+  componentDidMount() {
+    AOS.init({
+      duration: 500,
+    });
+  }
   render() {
     const actors = this.props.actors;
     return (
       <>
-        <main>
+        <main data-aos="fade-up">
           <div className="mainImg">
             <p className="textOnBgImg">
               Погрузитесь в мир кино: Встречайте новый фильмовый хит!
@@ -36,7 +43,7 @@ export class Main extends Component {
               <p className="year">
                 <span className="aboutFilm">Год выхода: </span> 2001
               </p>
-              <p className='actors'>
+              <p className="actors">
                 <span className="aboutFilm">Актеры: </span>
                 <span>{actors.join(', ')}</span>
               </p>
