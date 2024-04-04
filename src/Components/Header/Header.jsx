@@ -16,7 +16,7 @@ export class Header extends Component {
             </ul>
           </nav>
           <div className="logoDiv">
-            <img src={whiteLogo} alt="logo" className="logoImg" />
+            <img src={whiteLogo} alt="logo" id="logoImg" />
           </div>
         </header>
       </>
